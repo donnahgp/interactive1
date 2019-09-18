@@ -2,6 +2,8 @@ body {
   font-family: 'Josefin Slab', serif;
   background: pink;
   color: blue;
+  margin-left: 200px;
+  margin-right: 200px
 }
 
 h1 {
