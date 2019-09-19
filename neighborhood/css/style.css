@@ -3,7 +3,7 @@ body {
   background: #a3c6ff;
   color: #2d294d
   padding: 50px;
-  width: 700px;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 
@@ -16,8 +16,11 @@ h1 {
 
 img {
   width: 50%;
-
 }
+
+.text-block {
+  width: 960px;
+  margin: 20px auto 20px auto;
 
 .center-align {
   text-align: center;
