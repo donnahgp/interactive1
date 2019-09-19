@@ -8,6 +8,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+}
+.text-block {
+  width: 960px;
+  margin: 20px auto 20px auto;
+}
+.imagery-block {
+  width: 960px;
+  margin: 20px auto
+  }
 
 }
 
@@ -17,12 +26,10 @@ h1 {
 }
 
 img {
-  width: 75%;
+  width: 100%;
 }
 
-.text-block {
-  width: 960px;
-  margin: 20px auto 20px auto;
+
 
 .center-align {
   text-align: center;
