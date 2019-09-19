@@ -4,7 +4,6 @@ body {
   /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
   color: #2d294d
   padding: 50px;
-  width: 75%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -31,6 +30,21 @@ p {
 
 img {
   width: 100%;
+}
+
+.two-column {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.two-column img {
+  width: 50%;
+  float: left;
+}
+
+.two-column::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
