@@ -2,7 +2,6 @@ body {
   font-family: 'Josefin Slab', serif;
   background: #a3c6ff;
   /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
-  color: #2d294d
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -19,10 +18,26 @@ body {
 
 }
 
+
 h1 {
   font-family: 'Josefin Slab', serif;
+  font-style: bold;
   color: #373fff;
+  font-size: 50px;
 }
+
+h2 {
+  font-size: h1;
+  font-style:regular;
+}
+
+h1, h2 {
+  width: 50%;
+  height: 60px;
+  margin: 3px;
+  padding: auto;
+  display: inline;
+}​
 
 p {
   max-width: 800px;
