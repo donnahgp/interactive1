@@ -53,11 +53,9 @@ h1, h2 {
 }​
 
 p {
-  max-width: 700px;
-  font-size: 20px;
 }
 
-.text-block {
+.text-block p {
   max-width: 800px;
   font-size: 20px;
   width: 960px;
