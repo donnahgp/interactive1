@@ -38,6 +38,8 @@ h1 {
   font-style: bold;
   color: #373fff;
   font-size: 50px;
+    margin-left: 75px;
+    margin-top: 500px;
 }
 
 h2 {
@@ -48,7 +50,6 @@ h2 {
 h1, h2 {
   width: 50%;
   height: 50px;
-  margin: 25px, auto, 25px, 75px;
   display: inline;
 }​
 
@@ -62,6 +63,9 @@ p {
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
+}
+br {
+  padding-bottom: : 300px;
 }
 
 }
@@ -103,3 +107,26 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+ul {
+  list-style-type: none;
+  margin: 100px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffba42;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FF6347;
