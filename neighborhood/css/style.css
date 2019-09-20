@@ -58,7 +58,6 @@ p {
 }
 
 .text-block {
-  padding: 75px;
   max-width: 800px;
   font-size: 20px;
   width: 960px;
@@ -71,7 +70,6 @@ img {
 }
 
 .imagery-block img {
-  padding: 75px;
   width: 100%;
   }
 
