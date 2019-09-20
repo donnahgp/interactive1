@@ -1,4 +1,5 @@
 body{
-  background: rgb(255,172,172);
-  background: linear-gradient(90deg, rgba(255,172,172,1) 0%, rgba(98,255,236,1) 100%);
-}
+  background-color: #FAACA8;
+  background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 100%);
+  background-repeat: no-repeat;
+  margin:150px 200px  200px  610px;
