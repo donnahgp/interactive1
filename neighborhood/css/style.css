@@ -41,15 +41,14 @@ h1 {
 }
 
 h2 {
-  font-size: h1;
-  font-style:regular;
+  font-size: 50px;
+  font-style: italic;
 }
 
 h1, h2 {
   width: 50%;
-  height: 60px;
-  margin: 3px;
-  padding: auto;
+  height: 50px;
+  margin: 25px, auto, 25px, 75px;
   display: inline;
 }​
 
@@ -73,16 +72,18 @@ img {
 .imagery-block img {
   padding-left: 75px;
   padding-right: 75px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   }
 
 .two-column {
-  padding: 75px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .two-column img {
 
