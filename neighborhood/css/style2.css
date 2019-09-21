@@ -10,10 +10,14 @@ h1{
   font-family: 'Arapey', serif;
   font-weight: 100;
   margin-left: 130px;
+  margin-bottom:0px;
+  text-align: left;
+  font-size: 50px;
 }
 
 p{
 color: #314043;
+margin-left:130px;
 }
 
 .headertext {
@@ -23,7 +27,7 @@ color: #314043;
   line-height: 1;
   font-size: 120px;
   margin-bottom: 40px;
-  margin-left: 130px;
+  margin-left:130px;
   margin-top: 100px;
 }
 
@@ -32,14 +36,15 @@ color: #314043;
   margin-block-end: 0.67em;
   font-size: 16px;
   line-height: 1.5;
-  margin-left: 130px;
   max-width: 500px;
   margin-right:60px;
+  margin-bottom: 50px;
 
 }
 .column {
-     width:300px;
+     width:570px;
      float:left
+     column-count: 2;
 }
 
 video {
@@ -66,8 +71,8 @@ img{
   clip-path: polygon(0 26%, 0 71%, 100% 50%);
   object-fit: cover;
   width: 100vw;
-  margin-top: -100px;
-  margin-bottom:-100px;
+  margin-top: -270px;
+  margin-bottom:-300px;
 }
 
 
