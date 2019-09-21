@@ -36,15 +36,20 @@ margin-left:130px;
   margin-block-end: 0.67em;
   font-size: 16px;
   line-height: 1.5;
-  max-width: 500px;
+  max-width: 600px;
   margin-right:60px;
   margin-bottom: 50px;
 
 }
-.column {
-     width:570px;
-     float:left
-     column-count: 2;
+.left {
+    float: left;
+    width: 50%;
+    max-width: 550px;
+}
+
+.right {
+    margin-left: 40%;
+    max-width: 550px;
 }
 
 video {
@@ -73,6 +78,15 @@ img{
   width: 100vw;
   margin-top: -270px;
   margin-bottom:-300px;
+}
+
+.cutout-reverse {
+  clip-path: polygon(100% 25%, 100% 70%, 0 50%);
+  margin-top: -400px;
+  margin-bottom: -750px;
+  float: left;
+  width: 100vw;
+  object-fit: cover;
 }
 
 
