@@ -3,15 +3,31 @@ body{
   background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 100%);
   background-repeat: no-repeat;
     font-family: maple-web, sans-serif;
+    margin-bottom: 300px;
+}
+
+h1{
+  margin-top:100px;
+  color: #835ebd;
+}
+
+h3{
+  color:#835ebd;
 }
 
 p{
+  color:#835ebd;
 }
 
+
+
 a{
+  color:#ffffff;
   padding: 15px;
+  padding-bottom: 100px;
   line-height: 2em;
   max-width: 25px;
+
 
 }
 
