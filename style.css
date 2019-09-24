@@ -2,9 +2,14 @@ body{
   background-color: #FAACA8;
   background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 100%);
   background-repeat: no-repeat;
-  margin:150px auto  200px  610px;
+  margin:center;
     font-family: maple-web, sans-serif;
 }
 
 p{
+}
+
+img{
+  width: 90%;
+  clip-path: circle(50% at 50% 50%);
 }
