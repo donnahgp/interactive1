@@ -2,7 +2,6 @@ body{
   background-color: #FAACA8;
   background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 100%);
   background-repeat: no-repeat;
-  margin:center;
     font-family: maple-web, sans-serif;
 }
 
@@ -10,7 +9,7 @@ p{
 }
 
 img{
+  clip-path: circle(50% at 50% 50%);
   width: 90%;
   max-width: 600px;
-  clip-path: circle(50% at 50% 50%);
 }
