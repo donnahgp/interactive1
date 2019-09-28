@@ -7,7 +7,9 @@
 /* make the background of the page black */
 body {
         background: black;
+
 }
+
 
 /* flag canvas */
 #canvas {
@@ -15,18 +17,85 @@ body {
         height: 300px;
         position: relative;
         background: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:250px;
+}
+
+img{
+  position: relative;
+  z-index: 1;
+  top:-25px;
+  left:60px;
+  width:350px;
+  animation: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(90deg);
+    }
 }
 
 /* shapes */
 
-#circle {
-        width: 150px;
-        height: 150px;
-        background: red;
-        border-radius: 75px;
+#top {
+  width: 500px;
+  height:150px;
+  background: #0038a8;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0px;
+}
 
-        /* position the circle in the center of the flag */
-        position: absolute;
-        top: 75px;
-        left: 175px;
+#star-1{
+  width: 35px;
+  height:35px;
+  position: absolute;
+  top:20px;
+  left:120px;
+  background:#fcd116;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+#star-2{
+  width: 35px;
+  height:35px;
+  position: absolute;
+  top:133px;
+  left:360px;
+  background:#fcd116;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+#star-3{
+  width: 35px;
+  height:35px;
+  position: absolute;
+  top:240px;
+  left:120px;
+  background:#fcd116;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+#bottom {
+  width: 500px;
+  height:150px;
+  background: #ce1126;
+  position: absolute;
+  bottom: 0px;
+}
+
+#center {
+  width: 300px;
+  height:300px;
+  background: white;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  position: absolute;
+  left:120px;
+
+
 }
