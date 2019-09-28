@@ -6,17 +6,40 @@
 
 /* make the background of the page black */
 body {
-        background: black;
+        background: white;
+          animation: pulse 5s infinite;
+          animation-direction: alternate;
+
+        }
+
+        @keyframes pulse {
+          0% {
+            background-color: #ffba66;
+          }
+          100% {
+            background-color: #89ff6b;
+          }
+
+        }
+
+#element {
+  animation: pulse 5s infinite;
+  animation-direction: alternate;
+
 }
+
+
 
 /* flag canvas */
 #canvas {
         width: 500px;
         height: 300px;
         position: relative;
-        top:50%;
-        left:50%;
-        background: #fcea72;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:200px;
+        background:white;
 }
 
 /* shapes */
@@ -76,23 +99,23 @@ body {
 #left-eye{
 
   width: 75px;
-  height:70px;
+  height:45px;
   background: #3f2b63;
-  clip-path: polygon(0 20%, 100% 0, 100% 15%, 0 35%);
+  clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 20%);
   position: absolute;
   left: 110px;
-  top: 140px;
+  top: 142px;
 
 }
 #right-eye{
 
   width: 75px;
-  height:71px;
+  height:45px;
   background: #3f2b63;
-  clip-path: polygon(0 0, 100% 20%, 100% 35%, 0 15%);
+  clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 20%);
   position: absolute;
   right: 110px;
-  top: 140px;
+  top: 142px;
 
 }
 
@@ -146,26 +169,133 @@ body {
 }
 
 #right-eyebrow{
-  width: 50px;
-  height:50px;
+  width: 40px;
+  height:30px;
   background: #ffbabb;
-  clip-path: ellipse(50% 35% at 50% 50%);
+  clip-path: ellipse(50% 50% at 50% 50%);
   position: absolute;
   right: 125px;
-  top: 90px;
+  top: 95px;
 }
 
 #left-eyebrow{
 
-  width: 50px;
-  height:50px;
+  width: 40px;
+  height:30px;
   background: #ffbabb;
-  clip-path: ellipse(50% 35% at 50% 50%);
+  clip-path: ellipse(50% 50% at 50% 50%);
   position: absolute;
-  left: 120px;
-  top: 90px;
+  left: 125px;
+  top: 95px;
 
 }
+
+#fish-body{
+  width: 70px;
+  height:25px;
+  background: #66cfff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 27px;
+  left:207px;
+}
+
+#fish-eye{
+  width: 7px;
+  height:7px;
+  background: black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 32px;
+  left:217px;
+}
+
+#fish-tail{
+  width: 20px;
+  height:20px;
+  background: #66cfff;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  position: absolute;
+  top: 30px;
+  left:277px;
+
+}
+
+#left-whisker-1{
+  width: 100px;
+  height:8px;
+  background: #3f2b63;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 230px;
+  left:360px;
+  transform: rotate(20deg);
+  animation: wiggle-l1 2s infinite;
+}
+
+@keyframes wiggle-l1 {
+    0% { transform: rotate(20deg); }
+   40% { transform: rotate(10deg); }
+   75% { transform: rotate(5deg); }
+  100% { transform: rotate(20deg); }
+}
+
+#left-whisker-2{
+  width: 100px;
+  height:8px;
+  background: #3f2b63;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 180px;
+  left:360px;
+  transform: rotate(-20deg);
+  animation: wiggle-l2 2s infinite;
+}
+
+@keyframes wiggle-l2 {
+    0% { transform: rotate(-20deg); }
+   40% { transform: rotate(-10deg); }
+   75% { transform: rotate(-5deg); }
+  100% { transform: rotate(-20deg); }
+}
+
+
+#right-whisker-1{
+
+  width: 100px;
+  height:8px;
+  background: #3f2b63;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 230px;
+  right:360px;
+  transform: rotate(-20deg);
+  animation: wiggle-r1 2s infinite;
+
+  }
+  @keyframes wiggle-r1 {
+      0% { transform: rotate(-20deg); }
+     40% { transform: rotate(-10deg); }
+     75% { transform: rotate(-5deg); }
+    100% { transform: rotate(-20deg); }
+}
+#right-whisker-2{
+  width: 100px;
+  height:8px;
+  background: #3f2b63;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 180px;
+  right:360px;
+  transform: rotate(20deg);
+  animation: wiggle-r2 2s infinite;
+}
+
+@keyframes wiggle-r2 {
+    0% { transform: rotate(20deg); }
+   40% { transform: rotate(10deg); }
+   75% { transform: rotate(5deg); }
+  100% { transform: rotate(20deg); }
 
 
 #rectangle-original {
