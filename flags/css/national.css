@@ -11,15 +11,6 @@ body {
 
         }
 
-        @keyframes pulse {
-          0% {
-            background-color: #ce1126;
-          }
-          100% {
-            background-color: #0038a8;
-          }
-
-        }
 
 
 /* flag canvas */
@@ -62,34 +53,68 @@ img{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   position: absolute;
   top: 0px;
+  animation:change-bg-color-1;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes change-bg-color-1 {
+    from {
+        background-color: #0038a8;
+    }
+    to {
+        background-color: #ce1126;
+    }
 }
 
 #star-1{
-  width: 35px;
-  height:35px;
+  width: 32px;
+  height:32px;
   position: absolute;
   top:20px;
-  left:120px;
+  left:125px;
   background:#fcd116;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: spin-star;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+@keyframes spin-star {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
 #star-2{
-  width: 35px;
-  height:35px;
+  width: 32px;
+  height:32px;
   position: absolute;
   top:133px;
-  left:360px;
+  left:365px;
   background:#fcd116;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: spin-star;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 #star-3{
-  width: 35px;
-  height:35px;
+  width: 32px;
+  height:32px;
   position: absolute;
-  top:240px;
-  left:120px;
+  top:250px;
+  left:125px;
   background:#fcd116;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: spin-star;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #bottom {
@@ -98,7 +123,21 @@ img{
   background: #ce1126;
   position: absolute;
   bottom: 0px;
+  animation:change-bg-color-2;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
 }
+@keyframes change-bg-color-2 {
+    from {
+        background-color: #ce1126;
+    }
+    to {
+        background-color: #0038a8;
+    }
+}
+
 
 #center {
   width: 300px;
