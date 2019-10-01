@@ -3,9 +3,23 @@
 
 /* make the background of the page black */
 body {
-        background: black;
+        background: white;
+          animation: pulse 5s infinite;
+          animation-direction: alternate;
+          animation-duration: 4000ms;
+          animation-timing-function: ease-in-out;
 
-}
+        }
+
+        @keyframes pulse {
+          0% {
+            background-color: #ce1126;
+          }
+          100% {
+            background-color: #0038a8;
+          }
+
+        }
 
 
 /* flag canvas */

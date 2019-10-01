@@ -14,10 +14,10 @@ body {
 
         @keyframes pulse {
           0% {
-            background-color: #ffba66;
+            background-color: #abc3ff;
           }
           100% {
-            background-color: #89ff6b;
+            background-color: #ffb5b5;
           }
 
         }
@@ -39,7 +39,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top:250px;
-        background:white;
+        /* background:white; */
 }
 
 /* shapes */
