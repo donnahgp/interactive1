@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background: black;
+  background:#ff9696;
   font-size: 100px;
   font-family: critter-std, sans-serif;
   font-weight: 400;
@@ -20,7 +20,7 @@ img{
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: yellow;
+  color: #ffffff;
   width: 100vw;
   height: 100vh;
 
@@ -35,7 +35,7 @@ font-style: normal;
 /* hidden message */
 @media (max-width: 1024px) {
   body {
-   background: yellow;
+   background: #ff9696;
   }
   #answer {
     display: flex;
