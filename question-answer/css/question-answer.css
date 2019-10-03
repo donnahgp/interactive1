@@ -7,6 +7,10 @@
 body {
   background: black;
   font-size: 100px;
+  font-family: critter-std, sans-serif;
+  font-weight: 400;
+
+font-style: normal;
 }
 img{
   max-width: 100%;
@@ -19,6 +23,10 @@ img{
   color: yellow;
   width: 100vw;
   height: 100vh;
+
+font-weight: 400;
+
+font-style: normal;
 
 }
 #answer {
