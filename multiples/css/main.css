@@ -1,6 +1,6 @@
 body {
         background: white;
-          animation: change-pulse 4s infinite;
+          animation: change-pulse 2s infinite;
           animation-direction: alternate;
 
         }
@@ -45,7 +45,7 @@ body {
   position:absolute;
   top:10px;
   left:5px;
-  animation: wiggle 1.8s infinite;
+  animation: wiggle 2s infinite;
   animation-direction:alternate;
   transform-origin: bottom, right;
   animation-timing-function: ease-in-out;
