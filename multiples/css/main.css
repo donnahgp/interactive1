@@ -1,7 +1,8 @@
 img{
   max-width:600px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
+
 
 * {
     margin: 0px;
@@ -9,11 +10,12 @@ img{
     box-sizing: border-box;
 }
 body {
-    background: white;
+    background: #a1ffce;
 }
 #desktop {
     display: inline;
     color: white;
+    position:relative;
 }
 #tablet,
 #mobile,
@@ -21,14 +23,34 @@ body {
 #smallest {
     display: none;
 }
+
+#head{
+  position:absolute;
+  top:10px;
+  left:5px;
+  animation: wiggle 2s infinite;
+  animation-direction:alternate;
+  transform-origin: bottom, right;
+  z-index: 2;
+  }
+  @keyframes wiggle {
+      0% { transform: rotate(-5deg); }
+    100% { transform: rotate(30deg); }
+}
+
+#base{
+  position:absolute;
+  z-index: 1;
+}
+
 /* tablet */
 @media (min-width: 800px) and (max-width: 1024px) {
     body {
-        background: white;
+        background: #a1ffce;
     }
     #tablet {
         display: inline;
-        color: white;
+        color: #8debbb;
     }
     #desktop,
     #mobile,
@@ -40,7 +62,7 @@ body {
 /* mobile */
 @media (min-width:600px) and (max-width: 800px) {
     body {
-        background: white;
+        background: #a1ffce;
     }
     #mobile {
         display: inline;
@@ -56,7 +78,7 @@ body {
 
 @media (max-width: 600px) {
     body {
-        background: white;
+        background: #a1ffce;
     }
     #smallest {
         display: inline;
@@ -73,7 +95,7 @@ body {
 /* print */
 @media print {
     body {
-        background: white;
+        background: #a1ffce;
     }
     #print {
         display: inline;
