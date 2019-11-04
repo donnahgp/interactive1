@@ -3,12 +3,10 @@ body {
   font-family: farm-new, sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: url("bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #E66F86;
 }
 .container .box {
-  width:75vw;
+  width:100vw;
   height:100vh;
   display:inline-block;
   position:relative;
@@ -16,13 +14,8 @@ body {
 .container .box > div {
   width:100px;
   height:100px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin:-50px 0 0 -50px;
-  line-height:.7;
-  font-weight:bold;
 }
+
 .container {
   overflow-y:scroll;
   overflow-x:hidden;
@@ -39,15 +32,26 @@ body {
   font-size:0;
 }
 
-.p1text{
-  font-size:96px;
-  color:#FFF;
+
+  .text p{
+  color: white;
+  font-size: 20px;
+  max-width: 550px;
+  width: 500px;
+  line-height: 1.6;
+  position: absolute;
+  top:100px;
+  left: 100px;
+  white-space: pre-wrap;
+
+
+
 }
 .one {
   background-image: url("tutu.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: bottom right;
 }
 .two {
   background-image: url("jigoku.png");
@@ -61,6 +65,72 @@ body {
   background-size: contain;
   background-position: bottom;
 }
+
+
+
+
+#content{
+	width: 100%;
+	height:  100%;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.containerp2-1 {
+	background-image:url('tutu.jpg');
+	width: 100%;
+	height: 956.4px;
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+
+.containerp2-2 {
+	background-image:url('jigoku.gif');
+  background-position: center;
+	width: 100%;
+	height: 956.4px;
+	position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+  .containerp2-3 {
+  	background-image:url('pika.gif');
+    background-position: center;
+  	width: 100%;
+  	height: 956.4px;
+  	position: center;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  }
+
+  .vertical-center {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+/*
+.scroll-full {
+  background-size: cover;
+} */
+
+/* .scroll-vertical-p1-i1 {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(tutu.jpg);
+} */
 
 /* Translating the content's X ruines the scrollbar length. */
 /*
