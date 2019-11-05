@@ -6,12 +6,12 @@ body {
   background-color: #fcb3b7;
 }
 .container .box {
-  width:90vw;
+  width:80vw;
   height:100vh;
   display:inline-block;
   position:relative;
 }
-.container .box > div {
+.containerpart1 .box > div {
   width:100px;
   height:100px;
 }
@@ -21,7 +21,7 @@ body {
   overflow-x:hidden;
   transform: rotate(270deg) translateX(-100%);
   transform-origin: top left;
-  position:absolute;
+  /* position:absolute; */
   width:100vh;
   height:100vw;
 }
@@ -30,6 +30,14 @@ body {
   transform-origin: top left;
   white-space:nowrap;
   font-size:0;
+}
+
+.text{
+  height: 100vh;
+  width: 100vh;
+  background-color: #FFF;
+  opacity: 50%;
+  display: inline-block;
 }
 
 .text h1{
@@ -57,23 +65,49 @@ white-space: pre-wrap;
 
 
 }
-.one {
+.onepart1 {
   background-image: url("tutu.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
 }
-.two {
+.twopart1 {
   background-image: url("jigoku.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
 }
-.three {
+.threepart1 {
   background-image: url("pika.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+}
+
+.onepart2 {
+  background-image: url("fushigi.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.twopart2 {
+  background-image: url("fushigi2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.threepart2 {
+  background-image: url("cardsaku.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.fourpart2 {
+  background-image: url("cardsaku2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+    background-size: 700px;
 }
 
 
