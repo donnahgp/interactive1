@@ -3,7 +3,9 @@ body {
   font-family: farm-new, sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #fcb3b7;
+  background: rgb(158,196,255);
+  background: linear-gradient(180deg, rgba(158,196,255,1) 0%, rgba(169,166,255,1) 33%, rgba(255,166,166,1) 66%, rgba(255,224,113,1) 100%);
+  padding-bottom:-100px;
 }
 .container .box {
   width:80vw;
@@ -11,7 +13,7 @@ body {
   display:inline-block;
   position:relative;
 }
-.containerpart1 .box > div {
+.container .box > div {
   width:100px;
   height:100px;
 }
@@ -21,7 +23,6 @@ body {
   overflow-x:hidden;
   transform: rotate(270deg) translateX(-100%);
   transform-origin: top left;
-  /* position:absolute; */
   width:100vh;
   height:100vw;
 }
@@ -29,8 +30,22 @@ body {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   white-space:nowrap;
-  font-size:0;
 }
+
+/* .container {
+  overflow:scroll;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+.container2 {
+  transform: rotate(-90deg) translateX(-100vw);
+  transform-origin: top left;
+  white-space:nowrap;
+} */
 
 .text{
   height: 100vh;
@@ -39,8 +54,7 @@ body {
   opacity: 50%;
   display: inline-block;
 }
-
-.text h1{
+h1{
 color: #201859;
 font-size: 50px;
 line-height: 1.6;
@@ -51,18 +65,19 @@ white-space: pre-wrap;
 }
 
 
-  .text p{
-  color: #201859;
-  font-size: 20px;
-  max-width: 550px;
-  width: 500px;
-  line-height: 1.6;
-  position: absolute;
-  top:125px;
-  left: 100px;
-  white-space: pre-wrap;
+p{
+color: #201859;
+font-size: 20px;
+max-width: 550px;
+width: 500px;
+line-height: 1.6;
+position: absolute;
+top:125px;
+left: 100px;
+white-space: pre-wrap;
 
 
+/* TIMELINE PNGS */
 
 }
 .onepart1 {
@@ -90,12 +105,6 @@ white-space: pre-wrap;
   background-size: contain;
   background-position: bottom;
 }
-.twopart2 {
-  background-image: url("fushigi2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-}
 .threepart2 {
   background-image: url("cardsaku.png");
   background-repeat: no-repeat;
@@ -107,10 +116,10 @@ white-space: pre-wrap;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-    background-size: 700px;
+  background-size:65vh;
 }
 
-
+/* VERTICAL SCROLL SECTIONS */
 
 
 #content{
@@ -122,7 +131,7 @@ white-space: pre-wrap;
 
 }
 
-.containerp2-1 {
+.containerp1-1 {
 	background-image:url('tutu.jpg');
 	width: 100%;
 	height: 956.4px;
@@ -133,7 +142,7 @@ white-space: pre-wrap;
 
 }
 
-.containerp2-2 {
+.containerp1-2 {
 	background-image:url('jigoku.gif');
   background-position: center;
 	width: 100%;
@@ -144,7 +153,7 @@ white-space: pre-wrap;
 	background-repeat: no-repeat;
 }
 
-  .containerp2-3 {
+  .containerp1-3 {
   	background-image:url('pika.gif');
     background-position: center;
   	width: 100%;
@@ -153,6 +162,25 @@ white-space: pre-wrap;
   	background-size: cover;
   	background-attachment: fixed;
   	background-repeat: no-repeat;
+  }
+
+  .containerp2-1 {
+  	background-image:url('fushigi2.jpg');
+  	width: 100%;
+  	height: 956.4px;
+  	position: relative;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  }
+  .containerp2-2 {
+    background-image:url('cardsaku.jpg');
+    width: 100%;
+    height: 956.4px;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   .vertical-center {
