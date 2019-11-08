@@ -5,130 +5,211 @@ body {
   font-style: normal;
   background: rgb(158,196,255);
   background: linear-gradient(180deg, rgba(158,196,255,1) 0%, rgba(169,166,255,1) 33%, rgba(255,166,166,1) 66%, rgba(255,224,113,1) 100%);
-  padding-bottom:-100px;
 }
-.container .box {
-  width:80vw;
+
+.horizontal-scroll {
+  width:100vw;
   height:100vh;
-  display:inline-block;
-  position:relative;
-}
-.container .box > div {
-  width:100px;
-  height:100px;
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+   scroll-snap-type: x mandatory;
+
 }
 
-.container {
-  overflow-y:scroll;
-  overflow-x:hidden;
-  transform: rotate(270deg) translateX(-100%);
-  transform-origin: top left;
-  width:100vh;
-  height:100vw;
-}
-.container2 {
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  white-space:nowrap;
+.part1item1 {
+  word-wrap:break-word;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
 }
 
-/* .container {
-  overflow:scroll;
-  transform: rotate(90deg) translateY(-100%);
-  transform-origin: top left;
-  background-color:#999;
-  position:absolute;
-  width:100vh;
-  height:100vw;
+.part1item2 {
+
+  background-image: url("tutu.png");
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-size: 55vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
 }
-.container2 {
-  transform: rotate(-90deg) translateX(-100vw);
-  transform-origin: top left;
-  white-space:nowrap;
-} */
+
+.part1item3 {
+  background-image: url("jigoku.png");
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-size: 70vh;
+  background-position: bottom;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.part1item4 {
+  background-image: url("pika.png");
+  background-repeat: no-repeat;
+  background-size:  95vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.part2item2 {
+  background-image: url("fushigi.png");
+  background-repeat: no-repeat;
+  background-size:  65vh;
+  background-position: bottom;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.part2item3 {
+  background-image: url("cardsaku2.png");
+  background-repeat: no-repeat;
+  background-size:  50vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+
+.part2item4 {
+  background-image: url("cardsaku.png");
+  background-repeat: no-repeat;
+  background-size:  95vh;
+  background-position: bottom;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+
 
 .text{
   height: 100vh;
-  width: 100vh;
+  width: 50vw;
   background-color: #FFF;
   opacity: 50%;
   display: inline-block;
+  float:left;
 }
 h1{
+padding-top:10%;
 color: #201859;
 font-size: 50px;
-line-height: 1.6;
-position: absolute;
+line-height: bottom 1.6;
 top:0px;
 left: 100px;
 white-space: pre-wrap;
+margin-left: 10%;
+margin-right:5%;
 }
-
 
 p{
 color: #201859;
 font-size: 20px;
-max-width: 550px;
+max-width: 45vw;
 width: 500px;
 line-height: 1.6;
-position: absolute;
 top:125px;
 left: 100px;
 white-space: pre-wrap;
-
+margin-left: 10%;
+}
 
 /* TIMELINE PNGS */
-
-}
-.onepart1 {
-  background-image: url("tutu.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
-}
-.twopart1 {
-  background-image: url("jigoku.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-}
-.threepart1 {
-  background-image: url("pika.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-}
 
 .onepart2 {
   background-image: url("fushigi.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+    scroll-snap-align: start;
 }
-.threepart2 {
+.twopart2 {
   background-image: url("cardsaku.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+    scroll-snap-align: center;
+
+
 }
-.fourpart2 {
+.threepart2 {
   background-image: url("cardsaku2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   background-size:65vh;
+    scroll-snap-align: center;
 }
+
+.onepart3 {
+  background-image: url("naruto.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+      scroll-snap-align: center;
+}
+
+.twopart3 {
+  background-image: url("death.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+      scroll-snap-align: center;
+}
+
+.threepart3 {
+  background-image: url("doremi.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+      scroll-snap-align: center;
+}
+
 
 /* VERTICAL SCROLL SECTIONS */
 
+.vertical-center {
+display: table;
+height: 100%;
+width: 100%;
+}
 
-#content{
+.content{
 	width: 100%;
 	height:  100%;
 	display: flex;
 	flex-direction: column;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scroll-snap-type: y mandatory;
 
-
+}
+.container-landing {
+  background-image:url('landing.gif');
+  width: 100%;
+  height: 956.4px;
+  max-height: 100%;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scroll-snap-align: start;
 }
 
 .containerp1-1 {
@@ -139,11 +220,12 @@ white-space: pre-wrap;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+  scroll-snap-align: start;
 
 }
 
 .containerp1-2 {
-	background-image:url('jigoku.gif');
+	background-image:url('jigoku2.jpg');
   background-position: center;
 	width: 100%;
 	height: 956.4px;
@@ -151,10 +233,11 @@ white-space: pre-wrap;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+  scroll-snap-align: center;
 }
 
   .containerp1-3 {
-  	background-image:url('pika.gif');
+  	background-image:url('pokemon2.jpg');
     background-position: center;
   	width: 100%;
   	height: 956.4px;
@@ -162,6 +245,7 @@ white-space: pre-wrap;
   	background-size: cover;
   	background-attachment: fixed;
   	background-repeat: no-repeat;
+    scroll-snap-align: end;
   }
 
   .containerp2-1 {
@@ -183,41 +267,33 @@ white-space: pre-wrap;
     background-repeat: no-repeat;
   }
 
-  .vertical-center {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
+  .containerp3-1 {
+    background-image:url('naruto.jpg');
+    width: 100%;
+    height: 956.4px;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .containerp3-2 {
+    background-image:url('death.jpg');
+    width: 100%;
+    height: 956.4px;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 
-
-
-
-
-/*
-.scroll-full {
-  background-size: cover;
-} */
-
-/* .scroll-vertical-p1-i1 {
-  min-height: 100vh;
-  position: relative;
-  background-image: url(tutu.jpg);
-} */
-
-/* Translating the content's X ruines the scrollbar length. */
-/*
-#container {
-  overflow:scroll;
-  transform: rotate(90deg) translateY(-100%);
-  transform-origin: top left;
-  background-color:#999;
-  position:absolute;
-  width:100vh;
-  height:100vw;
-}
-#container2 {
-  transform: rotate(-90deg) translateX(-100vw);
-  transform-origin: top left;
-  white-space:nowrap;
-}
-*/
+  .containerp3-3 {
+    background-image:url('doremi.jpg');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
