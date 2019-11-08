@@ -97,6 +97,40 @@ body {
 }
 
 
+.part3item2 {
+  background-image: url("naruto.png");
+  background-repeat: no-repeat;
+  background-size:  70vh;
+  background-position: center;
+  scroll-snap-align: start;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.part3item3 {
+  background-image: url("death.png");
+  background-repeat: no-repeat;
+  background-size:  55vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+
+.part3item4 {
+  background-image: url("doremi.png");
+  background-repeat: no-repeat;
+  background-size:  95vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
 
 .text{
   height: 100vh;
@@ -130,9 +164,9 @@ white-space: pre-wrap;
 margin-left: 10%;
 }
 
-/* TIMELINE PNGS */
+/* OLD TIMELINE PNGS */
 
-.onepart2 {
+/* .onepart2 {
   background-image: url("fushigi.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -179,7 +213,7 @@ margin-left: 10%;
   background-size: contain;
   background-position: bottom;
       scroll-snap-align: center;
-}
+} */
 
 
 /* VERTICAL SCROLL SECTIONS */
