@@ -274,8 +274,7 @@ h2{
   	background-repeat: no-repeat;
   }
   .containerp1-4 {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
     position: relative;
     overflow:hidden;
     vertical-align: center;
@@ -302,7 +301,6 @@ h2{
   }
   .containerp2-3 {
     width: 100%;
-    height: 100vh;
     position: relative;
     overflow:hidden;
     vertical-align: center
@@ -342,7 +340,6 @@ h2{
 
   .containerp3-4{
     width: 100%;
-    height: 100vh;
     position: relative;
     overflow:hidden;
     content: cover;
