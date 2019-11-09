@@ -209,6 +209,38 @@ width: 100%;
   background-repeat: no-repeat;
 }
 
+.landing-text {
+z-index: 0;
+background-color: #FFF;
+opacity: 50%;
+display: inline-block;
+float:left;
+line-height: 1em;
+height: 90px;
+width: 40vw;
+background-size: cover;
+position: absolute;
+margin-top: 550px;
+text-align: center;
+
+}
+h2{
+  z-index: 1;
+  padding-top:1.5%;
+  color: #201859;
+  font-size: 32px;
+  line-height: bottom 1.6;
+  top:0px;
+  left: 40vw;
+  white-space: pre-wrap;
+  margin-left: 2%;
+  margin-right:2%;
+  display:inline-block;
+  position: absolute;
+  margin-top: 550px;
+  left:0;
+}
+
 .containerp1-1 {
 	background-image:url('tutu.jpg');
 	width: 100%;
