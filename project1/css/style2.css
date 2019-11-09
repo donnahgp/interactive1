@@ -134,7 +134,6 @@ scroll-snap-type: y mandatory;
   display: inline-block;
 }
 
-
 .part3item4 {
   background-image: url("doremi.png");
   background-repeat: no-repeat;
@@ -146,6 +145,47 @@ scroll-snap-type: y mandatory;
   display: inline-block;
 }
 
+.part4item2 {
+  background-image: url("vamp.png");
+  background-repeat: no-repeat;
+  background-size:  75vh;
+  background-position: bottom;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.part4item3 {
+  background-image: url("shugo.png");
+  background-repeat: no-repeat;
+  background-size:  75vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+.part4item4 {
+  background-image: url("lucky.png");
+  background-repeat: no-repeat;
+  background-size:  90vh;
+  background-position: bottom;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
+
+.part4item5 {
+  background-image: url("kon.png");
+  background-repeat: no-repeat;
+  background-size:  100vh;
+  background-position: center;
+  scroll-snap-align: center;
+  width:100%;
+  height:100vh;
+  display: inline-block;
+}
 
 .text{
   height: 100vh;
@@ -338,10 +378,57 @@ h2{
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-
   .containerp3-4{
     width: 100%;
     position: relative;
     overflow:hidden;
     content: cover;
+  }
+  .containerp4-1 {
+    background-image:url('vamp.jpg');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .containerp4-2 {
+    background-image:url('shugo.jpg');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .containerp4-3 {
+    background-image:url('lucky.jpg');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .containerp4-4 {
+    background-image:url('kon.jpg');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .containerp4-4 {
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    overflow:hidden;
+    vertical-align: center
   }
