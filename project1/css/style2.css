@@ -195,11 +195,12 @@ scroll-snap-type: y mandatory;
   display: inline-block;
   float:left;
 }
+
 h1{
 padding-top:10%;
 color: #201859;
 font-size: 50px;
-line-height: bottom 1.6;
+line-height: 1em;
 top:0px;
 left: 100px;
 white-space: pre-wrap;
@@ -209,13 +210,12 @@ margin-right:5%;
 
 p{
 color: #201859;
-font-size: 20px;
-max-width: 45vw;
+font-size: 18px;
+max-width: 40vw;
 width: 500px;
 line-height: 1.6;
-top:125px;
-left: 100px;
-white-space: pre-wrap;
+top:100px;
+white-space: pre-line;
 margin-left: 10%;
 }
 
@@ -231,7 +231,7 @@ width: 100%;
 
 .content{
 	width: 100%;
-	height:  100%;
+	/* height:  100%; */
 	display: flex;
 	flex-direction: column;
   scroll-behavior: smooth;
@@ -240,11 +240,19 @@ width: 100%;
 }
 .container-landing {
   background-image:url('landing.gif');
-  width: 100%;
+  /* width: 100%;
   height: 956.4px;
   max-height: 100%;
   position: relative;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: right;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -283,21 +291,22 @@ h2{
 }
 
 .containerp1-1 {
-	background-image:url('tutu.jpg');
+	background-image:url('tutu2.jpg');
 	width: 100%;
-	height: 956.4px;
+  height: 100vh;
 	position: relative;
 	background-size: cover;
 	background-attachment: fixed;
+  background-position: center;
 	background-repeat: no-repeat;
 
 }
 
 .containerp1-2 {
 	background-image:url('jigoku2.jpg');
-  background-position: center;
-	width: 100%;
-	height: 956.4px;
+  background-position: left;
+	width: cover;
+  height: 100vh;
 	position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -306,9 +315,9 @@ h2{
 
   .containerp1-3 {
   	background-image:url('pokemon2.jpg');
-    background-position: center;
+    background-position: right;
   	width: 100%;
-  	height: 956.4px;
+  	height: 100vh;
   	position: center;
   	background-size: cover;
   	background-attachment: fixed;
@@ -323,20 +332,22 @@ h2{
 
 
   .containerp2-1 {
-  	background-image:url('fushigi2.jpg');
+  	background-image:url('fushigi.jpg');
   	width: 100%;
-  	height: 956.4px;
+  	height: 100vh;
   	position: relative;
   	background-size: cover;
+    background-position: right;
   	background-attachment: fixed;
   	background-repeat: no-repeat;
   }
   .containerp2-2 {
     background-image:url('cardsaku.jpg');
     width: 100%;
-    height: 956.4px;
+  	height: 100vh;
     position: relative;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -351,7 +362,7 @@ h2{
   .containerp3-1 {
     background-image:url('naruto.jpg');
     width: 100%;
-    height: 956.4px;
+  	height: 100vh;
     position: relative;
     background-size: cover;
     background-attachment: fixed;
@@ -361,9 +372,10 @@ h2{
   .containerp3-2 {
     background-image:url('death.jpg');
     width: 100%;
-    height: 956.4px;
+    height: 100vh;
     position: relative;
     background-size: cover;
+    background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -374,7 +386,7 @@ h2{
     height: 100vh;
     position: relative;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -397,7 +409,7 @@ h2{
   .containerp4-2 {
     background-image:url('shugo.jpg');
     width: 100%;
-    height: 100vh;
+    height: 100vw;
     position: relative;
     background-size: cover;
     background-position: top;
@@ -407,7 +419,7 @@ h2{
   .containerp4-3 {
     background-image:url('lucky.jpg');
     width: 100%;
-    height: 100vh;
+    height: 100vw;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -434,14 +446,23 @@ h2{
   }
 
 
-  @media (min-width:1px) and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
       body {
       background: rgb(158,196,255);
       }
       #mobile {
-          display: inline;
+
+        
       }
       #desktop {
           display: none;
       }
+  }
+
+
+  #desktop {
+
+  }
+  #mobile, {
+      display: none;
   }
