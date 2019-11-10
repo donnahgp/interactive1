@@ -8,14 +8,19 @@ body {
 }
 
 #snap-scroll {
-scroll-snap-type: y mandatory;
+   height: 100vh;
+   scroll-snap-type: mandatory;
+}
+
+#y-mandatory {
+  scroll-snap-type: y mandatory;
 }
 
 #landing {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
-#first #second #third #fourth #fifth #sixth {
+#first #second #third #fourth #fifth #sixth #seventh #eighth {
     scroll-snap-align: center;
 }
 
@@ -66,14 +71,23 @@ scroll-snap-type: y mandatory;
   width:100vw;
   height:100vh;
   display: inline-block;
+  float:left;
 }
 
+.direction {
+display:inline-block;
+scroll-snap-align: start;
+float:left;
+}
 
 .part1item2 {
 
   background-image: url("tutu.png");
   background-repeat: no-repeat;
   background-size:  contain;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  box-sizing: border-box;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -86,6 +100,8 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  border-top:50px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -97,6 +113,11 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size:  contain;
   background-position: center;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -119,6 +140,11 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -131,6 +157,10 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 50px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -143,6 +173,9 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: start;
   width:100%;
   height:100vh;
@@ -154,6 +187,9 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  border-bottom: 40px solid transparent;
+  border-top: 40px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -176,6 +212,10 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid transparent;
+  box-sizing: border-box;
     scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -187,6 +227,9 @@ scroll-snap-type: y mandatory;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
   height:100vh;
@@ -279,18 +322,20 @@ margin-left: 15%;
 /* VERTICAL SCROLL SECTIONS */
 
 .vertical-center {
-display: table;
-height: 100%;
-width: 100%;
+  display: table;
+  height: 100%;
+  width: 100%;
+    overflow: scroll;
 }
 
 .content{
 	width: 100%;
-	/* height:  100%; */
+	height: 100%;
 	display: flex;
 	flex-direction: column;
   scroll-behavior: smooth;
-  overflow-x: scroll;
+
+  /* overflow-x: scroll; */
 
 }
 .container-landing {
@@ -354,6 +399,7 @@ h2{
 	background-attachment: fixed;
   background-position: center;
 	background-repeat: no-repeat;
+    scroll-snap-align: center;
 
 }
 
@@ -366,6 +412,7 @@ h2{
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+    scroll-snap-align: center;
 }
 
   .containerp1-3 {
@@ -377,6 +424,7 @@ h2{
   	background-size: cover;
   	background-attachment: fixed;
   	background-repeat: no-repeat;
+      scroll-snap-align: center;
   }
   .containerp1-4 {
     width: 100vw;
@@ -392,7 +440,7 @@ h2{
   	height: 100vh;
   	position: relative;
   	background-size: cover;
-    background-position: right;
+    background-position: center;
   	background-attachment: fixed;
   	background-repeat: no-repeat;
   }
