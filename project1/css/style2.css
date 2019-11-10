@@ -30,12 +30,40 @@ scroll-snap-type: y mandatory;
 
 }
 
+#first{
+  background-image:url("bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+#third{
+  background-image:url("bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+#fifth{
+  background-image:url("bg4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+#seventh{
+  background-image:url("bg5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
 /* UPDATED TRANSPARENT IMAGES HORIZONTAL SCROLL */
 
 .part1item1 {
   word-wrap:break-word;
   scroll-snap-align: center;
-  width:25vw;
+  width:100vw;
   height:100vh;
   display: inline-block;
 }
@@ -46,9 +74,8 @@ scroll-snap-type: y mandatory;
   background-image: url("tutu.png");
   background-repeat: no-repeat;
   background-size:  contain;
-  background-size: 55vh;
   background-position: center;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   width:100%;
   height:100vh;
   display: inline-block;
@@ -57,8 +84,7 @@ scroll-snap-type: y mandatory;
 .part1item3 {
   background-image: url("jigoku.png");
   background-repeat: no-repeat;
-  background-size:  contain;
-  background-size: 70vh;
+  background-size: contain;
   background-position: bottom;
   scroll-snap-align: center;
   width:100%;
@@ -69,7 +95,7 @@ scroll-snap-type: y mandatory;
 .part1item4 {
   background-image: url("pika.png");
   background-repeat: no-repeat;
-  background-size:  95vh;
+  background-size:  contain;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -80,9 +106,9 @@ scroll-snap-type: y mandatory;
 .part2item2 {
   background-image: url("fushigi.png");
   background-repeat: no-repeat;
-  background-size:  65vh;
+    background-size: contain;
   background-position: bottom;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   width:100%;
   height:100vh;
   display: inline-block;
@@ -91,7 +117,7 @@ scroll-snap-type: y mandatory;
 .part2item3 {
   background-image: url("cardsaku2.png");
   background-repeat: no-repeat;
-  background-size:  60vh;
+  background-size: contain;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -103,7 +129,7 @@ scroll-snap-type: y mandatory;
 .part2item4 {
   background-image: url("cardsaku.png");
   background-repeat: no-repeat;
-  background-size:  95vh;
+  background-size: contain;
   background-position: bottom;
   scroll-snap-align: center;
   width:100%;
@@ -115,9 +141,9 @@ scroll-snap-type: y mandatory;
 .part3item2 {
   background-image: url("naruto.png");
   background-repeat: no-repeat;
-  background-size:  70vh;
+  background-size: contain;
   background-position: center;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
   width:100%;
   height:100vh;
   display: inline-block;
@@ -126,7 +152,7 @@ scroll-snap-type: y mandatory;
 .part3item3 {
   background-image: url("death.png");
   background-repeat: no-repeat;
-  background-size:  55vh;
+  background-size: contain;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -137,7 +163,7 @@ scroll-snap-type: y mandatory;
 .part3item4 {
   background-image: url("doremi.png");
   background-repeat: no-repeat;
-  background-size:  95vh;
+  background-size: contain;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -148,8 +174,9 @@ scroll-snap-type: y mandatory;
 .part4item2 {
   background-image: url("vamp.png");
   background-repeat: no-repeat;
-  background-size:  75vh;
+  background-size: contain;
   background-position: bottom;
+    scroll-snap-align: center;
   width:100%;
   height:100vh;
   display: inline-block;
@@ -158,7 +185,7 @@ scroll-snap-type: y mandatory;
 .part4item3 {
   background-image: url("shugo.png");
   background-repeat: no-repeat;
-  background-size:  75vh;
+  background-size: contain;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -168,7 +195,7 @@ scroll-snap-type: y mandatory;
 .part4item4 {
   background-image: url("lucky.png");
   background-repeat: no-repeat;
-  background-size:  90vh;
+  background-size: contain;
   background-position: bottom;
   scroll-snap-align: center;
   width:100%;
@@ -179,7 +206,7 @@ scroll-snap-type: y mandatory;
 .part4item5 {
   background-image: url("kon.png");
   background-repeat: no-repeat;
-  background-size:  100vh;
+  background-size: contain;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -187,36 +214,64 @@ scroll-snap-type: y mandatory;
   display: inline-block;
 }
 
-.text{
+.part1text{
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
   background-color: #FFF;
-  opacity: 50%;
+  opacity: 65%;
+  display: inline-block;
+  float:left;
+
+
+}
+.part2text{
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFF;
+  opacity: 65%;
+  display: inline-block;
+  float:left;
+}
+.part3text{
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFF;
+  opacity: 65%;
+  display: inline-block;
+  float:left;
+}
+.part4text{
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFF;
+  opacity: 65%;
   display: inline-block;
   float:left;
 }
 
 h1{
-padding-top:10%;
-color: #201859;
-font-size: 50px;
+padding-top:5%;
+max-width: 50vw;
+color: #000;
+font-size: 7vmin;
 line-height: 1em;
 top:0px;
 left: 100px;
 white-space: pre-wrap;
-margin-left: 10%;
+margin-left: 15%;
 margin-right:5%;
 }
 
 p{
-color: #201859;
-font-size: 18px;
-max-width: 40vw;
+
+color: #000;
+font-size: 2.5vmin;
+max-width: 50vw;
 width: 500px;
 line-height: 1.6;
 top:100px;
 white-space: pre-line;
-margin-left: 10%;
+margin-left: 15%;
 }
 
 
@@ -277,7 +332,7 @@ h2{
   padding-top:1.5%;
   max-width: 300px;
   color: #201859;
-  font-size: 28px;
+  font-size: 3.5vmin;
   line-height: 16pt;
   top:0px;
   left: 40vw;
@@ -446,23 +501,27 @@ h2{
   }
 
 
-  @media only screen and (max-width: 800px) {
-      body {
-      background: rgb(158,196,255);
-      }
-      #mobile {
+  /* @media  (max-width: 800px) {
 
-        
-      }
-      #desktop {
-          display: none;
-      }
+    body {
+    margin:0;
+    font-family: farm-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(158,196,255);
+        }
+
+    #mobile {
+
+        }
+
+
+
+      #desktop {display: none;}
+
   }
+ */
 
-
-  #desktop {
-
-  }
-  #mobile, {
-      display: none;
+  @media (min-width: 800px) {
+      #mobile{ display: none;}
   }
