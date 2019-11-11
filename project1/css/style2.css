@@ -233,6 +233,8 @@ float:left;
   background-position: center;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
+  border-top:20px solid transparent;
+  border-bottom:20px solid transparent;
   box-sizing: border-box;
   scroll-snap-align: center;
   width:100%;
@@ -254,6 +256,11 @@ float:left;
   background-image: url("kon.png");
   background-repeat: no-repeat;
   background-size: contain;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top:20px solid transparent;
+  border-bottom:20px solid transparent;
+  box-sizing: border-box;
   background-position: center;
   scroll-snap-align: center;
   width:100%;
@@ -554,11 +561,11 @@ h2{
 
 
   ul {
-    position: relative;
+    position: ;
     top: 0;
     width: 100%;
     list-style-type: none;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: transparent;
@@ -578,4 +585,4 @@ h2{
   }
 
   li a:hover {
-    background-color: #FF6347;
+    background-color: #ffde59;
