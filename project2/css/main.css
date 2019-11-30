@@ -17,6 +17,15 @@ p{
   animation-iteration-count: infinite;
 }
 
+/* .animation-scale {
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scale {
+    to { transform: scale(.75); }
+    from { transform: scale(.75); }
+  } */
 
 @keyframes floating {
     0 { transform: translate(0,  0px); }
@@ -94,8 +103,8 @@ p{
   margin:10vh auto;
   margin-bottom: 0;
   width: 80%;
+  transform: scale(.75);
   box-sizing: border-box;
-  transform:scale(.75);
 }
 
 
@@ -196,7 +205,7 @@ p{
 	background: transparent;
 }
 
-/* @keyframes flicker {
+@keyframes flicker {
   0% {
     opacity: 0.27861;
   }
@@ -355,4 +364,4 @@ p{
 }
 .crt {
   animation: textShadow 1.6s infinite;
-} */
+}
