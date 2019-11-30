@@ -167,11 +167,6 @@ body {
 }
 
 .animation-pulse {
-  -webkit-animation-name: pulse; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: .8s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-  -webkit-animation-timing-function: ease-in-out;
   animation-name: pulse;
   animation-duration: .8s;
   animation-iteration-count: infinite;

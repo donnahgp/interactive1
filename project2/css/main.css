@@ -7,9 +7,25 @@ font-family: 'Space Mono', monospace;
 p{
   font-size: 30px;
   color:white;
-  margin:0;
+  margin-top:5vh;
 
 }
+
+.animation-floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes floating {
+    0 { transform: translate(0,  0px); }
+    49.9% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 10px); }
+    99.9% { transform: translate(0, 10px); }
+    100% { transform: translate(0, 0px); }
+  }
+
 
 .landing {
   background-color: #000;
@@ -19,10 +35,9 @@ p{
 .landing-letters{
   display:flex;
   transform:scale(1);
-  border-left: 5vw solid transparent;
-  border-right: auto solid transparent;
-  border-top: 15vh solid transparent;
-  border-bottom:15vh solid transparent;
+  padding-top:20vh;
+  margin:0 auto;
+  width: 80%;
   animation: floating 2s infinite;
 }
 @keyframes floating {
@@ -34,9 +49,11 @@ p{
   }
 
 .sublanding-letters{
-  display:inline-block;
-  border-bottom:20vh solid transparent;
-  border-left: 4vw solid transparent;
+  padding-top:15vh;
+  transform: scale(.60);
+  display:flex;
+  margin:0 auto;
+  width: 80%;
   animation: blink 2s infinite;
 }
 @keyframes blink {
@@ -71,6 +88,22 @@ p{
   background-position: center;
 }
 
+
+.level-1-letters{
+  display: flex;
+  margin:10vh auto;
+  margin-bottom: 0;
+  width: 80%;
+  box-sizing: border-box;
+  animation: floating 2s infinite;
+}
+
+#L-lev1, #1-lev1 {
+  grid-template-columns: .5vw 5vw 5vw;
+  grid-template-rows: 5vw 5vw 5vw 5vw 5vw;
+
+}
+
 .letter-5 {
 	position: relative;
 	margin: 10px;
@@ -80,7 +113,6 @@ p{
 
 	grid-template-columns: 3vw 3vw 3vw 3vw 3vw;
 	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
-	grid-gap: 0px 0px;
 }
 
 .letter-4 {
@@ -92,7 +124,7 @@ p{
 
 	grid-template-columns: 3vw 3vw 3vw 3vw;
 	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
-	grid-gap: 0px 0px;
+
 }
 
 .letter-3 {
@@ -104,7 +136,6 @@ p{
 
 	grid-template-columns: 3vw 3vw 3vw;
 	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
-	grid-gap: 0px 0px;
 }
 
 .letter-2 {
@@ -116,7 +147,6 @@ p{
 
 	grid-template-columns: 3vw 3vw;
 	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
-	grid-gap: 0px 0px;
 }
 
 .letter-1 {
@@ -128,7 +158,6 @@ p{
 
 	grid-template-columns: 3vw;
 	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
-	grid-gap: 0px 0px;
 }
 
 /* letter pieces */
