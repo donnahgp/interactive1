@@ -95,14 +95,9 @@ p{
   margin-bottom: 0;
   width: 80%;
   box-sizing: border-box;
-  animation: floating 2s infinite;
+  transform:scale(.75);
 }
 
-#L-lev1, #1-lev1 {
-  grid-template-columns: .5vw 5vw 5vw;
-  grid-template-rows: 5vw 5vw 5vw 5vw 5vw;
-
-}
 
 .letter-5 {
 	position: relative;
@@ -201,7 +196,7 @@ p{
 	background: transparent;
 }
 
-@keyframes flicker {
+/* @keyframes flicker {
   0% {
     opacity: 0.27861;
   }
@@ -360,4 +355,4 @@ p{
 }
 .crt {
   animation: textShadow 1.6s infinite;
-}
+} */
