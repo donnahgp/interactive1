@@ -4,6 +4,16 @@ margin:0;
 font-family: 'Space Mono', monospace;
 }
 
+.library {
+  display: none;
+}
+
+audio {
+  border-radius: 90px;
+  opacity: 10%;
+  transform:scale(.85);
+}
+
 p{
   font-size: 30px;
   color:white;
@@ -13,7 +23,7 @@ p{
 
 .animation-floating {
   animation-name: floating;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
@@ -43,10 +53,9 @@ p{
 }
 .landing-letters{
   display:flex;
-  transform:scale(1);
-  padding-top:20vh;
+  padding-top:10vh;
   margin:0 auto;
-  width: 80%;
+  width: 90%;
   animation: floating 2s infinite;
 }
 @keyframes floating {
@@ -59,10 +68,9 @@ p{
 
 .sublanding-letters{
   padding-top:15vh;
-  transform: scale(.60);
   display:flex;
   margin:0 auto;
-  width: 80%;
+  width: 85%;
   animation: blink 2s infinite;
 }
 @keyframes blink {
@@ -71,7 +79,7 @@ p{
 	50% {opacity: 1}
 }
 
-#S-sublanding, #C-sublanding, #R-sublanding, #O-sublanding, #A-sublanding  {
+/* #S-sublanding, #C-sublanding, #R-sublanding, #O-sublanding, #A-sublanding  {
   grid-template-columns: 1vw 1vw 1vw 1vw;
 	grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
 }
@@ -85,32 +93,253 @@ p{
   grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
  }
 
- #space-sublanding {
-   grid-template-columns: 1vw;
-   grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
-  }
+#space-sublanding {
+ grid-template-columns: 1vw;
+ grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
+} */
 
 .level-1{
   background-color: #0C025E;
   width:100vw;
-  height:100vh;
-  background-position: center;
+  /* background-position: center;
+  border-bottom: 500px solid transparent; */
+  box-sizing: border-box;
+}
+
+.level-1-row-1{
+  margin:10vh auto;
+  margin-bottom: 0;
+  width: 82%;
+}
+.level-1-row-2{
+  margin:10vh auto;
+  margin-bottom: 0;
+  width: 85%;
+}
+
+.level-1-row-3 {
+  margin:10vh auto;
+  margin-bottom: 0;
+  width: 82%;
+}
+
+.level-1-row-4{
+  margin:10vh auto;
+  margin-bottom: 0;
+  width: 88%;
+}
+
+.level-1-row-5{
+  margin:10vh auto;
+  margin-bottom: 0;
+  width: 90%;
 }
 
 
-.level-1-letters{
+.level-1-letters-header{
   display: flex;
   margin:10vh auto;
   margin-bottom: 0;
-  width: 80%;
-  transform: scale(.75);
+  width: 98%;
   box-sizing: border-box;
+}
+
+
+.letter-4-red {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+
+}
+
+.letter-4-pink {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+
+}
+
+.letter-3-pink {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-1-pink {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+
+}
+
+.letter-3-purple {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-4-purple {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-5-purple {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-5-blue {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-4-blue {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-5-teal {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-4-teal {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-3-teal {
+	position: relative;
+	margin: 2vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 3vw 3vw 3vw;
+	grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-5-small {
+	position: relative;
+	margin: 1vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 1vw 1vw 1vw 1vw 1vw;
+	grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
+}
+
+.letter-4-small {
+	position: relative;
+	margin: 1vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 1vw 1vw 1vw 1vw;
+	grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
+
+}
+
+.letter-3-small {
+	position: relative;
+	margin: 1vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 1vw 1vw 1vw;
+	grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
+}
+
+.letter-2-small {
+	position: relative;
+	margin: 1vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 1vw 1vw;
+	grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
+}
+
+.letter-1-small {
+	position: relative;
+	margin: 1vw;
+
+	display: grid;
+	float: left;
+
+	grid-template-columns: 1vw;
+	grid-template-rows: 1vw 1vw 1vw 1vw 1vw;
 }
 
 
 .letter-5 {
 	position: relative;
-	margin: 10px;
+	margin: 2vw;
 
 	display: grid;
 	float: left;
@@ -121,7 +350,7 @@ p{
 
 .letter-4 {
 	position: relative;
-	margin: 10px;
+	margin: 2vw;
 
 	display: grid;
 	float: left;
@@ -133,7 +362,7 @@ p{
 
 .letter-3 {
 	position: relative;
-	margin: 10px;
+	margin: 2vw;
 
 	display: grid;
 	float: left;
@@ -144,7 +373,7 @@ p{
 
 .letter-2 {
 	position: relative;
-	margin: 10px;
+	margin: 2vw;
 
 	display: grid;
 	float: left;
@@ -155,7 +384,7 @@ p{
 
 .letter-1 {
 	position: relative;
-	margin: 10px;
+	margin: 2vw;
 
 	display: grid;
 	float: left;
@@ -202,6 +431,148 @@ p{
 }
 
 .letter-1 div.empty {
+	background: transparent;
+}
+
+
+.letter-5-small div {
+	background: yellow;
+}
+
+.letter-5-small div.empty {
+	background: transparent;
+}
+
+.letter-4-small div {
+	background: yellow;
+}
+
+.letter-4-small div.empty {
+	background: transparent;
+}
+
+.letter-3-small div {
+	background: yellow;
+}
+
+.letter-3-small div.empty {
+	background: transparent;
+}
+
+.letter-2-small div {
+	background: yellow;
+}
+
+.letter-20-small div.empty {
+	background: transparent;
+}
+
+.letter-1-small div {
+	background: yellow;
+}
+
+.letter-1-small div.empty {
+	background: transparent;
+}
+
+
+.letter-4-red div {
+	background: #FF5F5F;
+}
+
+.letter-4-red div.empty {
+	background: transparent;
+}
+
+
+
+.letter-4-pink div {
+	background: #FF61FB;
+}
+
+.letter-4-pink div.empty {
+	background: transparent;
+}
+
+.letter-3-pink div {
+	background: #FF61FB;
+}
+
+.letter-3-pink div.empty {
+	background: transparent;
+}
+
+.letter-1-pink div {
+	background: #FF61FB;
+}
+
+.letter-1-pink div.empty {
+	background: transparent;
+}
+
+
+.letter-5-purple div {
+	background: #A166FF;
+}
+
+.letter-5-purple div.empty {
+	background: transparent;
+}
+
+.letter-4-purple div {
+	background: #A166FF;
+}
+
+.letter-4-purple div.empty {
+	background: transparent;
+}
+
+.letter-3-purple div {
+	background: #A166FF;
+}
+
+.letter-3-purple div.empty {
+	background: transparent;
+}
+
+.letter-5-blue div {
+	background: #2980FF;
+}
+
+.letter-5-blue div.empty {
+	background: transparent;
+}
+
+.letter-4-blue div {
+	background: #2980FF;
+}
+
+.letter-4-blue div.empty {
+	background: transparent;
+}
+
+
+.letter-5-teal div {
+	background: #5FFFE4;
+}
+
+.letter-5-teal div.empty {
+	background: transparent;
+}
+
+.letter-4-teal div {
+	background: #5FFFE4;
+}
+
+.letter-4-teal div.empty {
+	background: transparent;
+}
+
+.letter-3-teal div {
+	background: #5FFFE4;
+}
+
+.letter-3-teal div.empty {
 	background: transparent;
 }
 
