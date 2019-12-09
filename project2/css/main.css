@@ -604,33 +604,70 @@ p {
   right:25%;
 }
 
-
-.top{
+.top-2{
   left:25%;
 }
 
-.bottom{
+.bottom-2{
   right:25%;
 }
 
-/* .top-1:hover {
-  transform: translateX(-50px);
-}
-.bottom-1:hover {
-  transform: translateX(50px);
-} */
-
-
-.b-puzzle-1:hover ~ .top-1{
--webkit-transform:translatex(-50px);
-transform:translatex(-50px);
+.top-3{
+  left:25%;
 }
 
-.b-puzzle-1:hover ~ .bottom-1{
--webkit-transform:translatex(50px);
-transform:translatex(50px);
+.bottom-3{
+  right:25%;
 }
 
+.top-5{
+  left:25%;
+}
+
+.bottom-5{
+  right:25%;
+}
+
+
+.b-puzzle-1:hover .top-1 {
+    transform: translateX(-10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-1:hover .bottom-1 {
+    transform: translateX(10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-2:hover .top-2 {
+    transform: translateX(-10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-2:hover .bottom-2 {
+    transform: translateX(10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-3:hover .top-3 {
+    transform: translateX(-10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-3:hover .bottom-3 {
+    transform: translateX(10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-5:hover .top-5 {
+    transform: translateX(-10vw);
+    transition-duration: 1s;
+}
+
+.b-puzzle-5:hover .bottom-5 {
+    transform: translateX(10vw);
+    transition-duration: 1s;
+}
 
 
 /* @keyframes flicker {
