@@ -758,8 +758,42 @@ p {
     transform: translateX(7vw);
     transition-duration: 1s;
 
+}
 
-/* @keyframes flicker {
+.paused {
+  background-color: black;
+  height: 100vh;
+  background-position: center;
+  text-align: center;
+}
+
+.paused-letters{
+  display: inline-block;
+  padding-top: 15vh;
+  animation: floating 2s infinite;
+}
+
+.paused-subletters{
+  display: inline-block;
+  padding-top: 10vh;
+  animation: blink 2s infinite;
+}
+
+
+.level-2{
+  width:100vw;
+  text-align: center;
+}
+
+.level-2-letters-header{
+  display: inline-block;
+  margin: 10vh auto;
+  margin-bottom: 1%;
+  box-sizing: border-box;
+  transform:scale(.95);
+}
+
+@keyframes flicker {
   0% {
     opacity: 0.27861;
   }
@@ -827,29 +861,27 @@ p {
 .crt::after {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background: rgba(18, 16, 16, 0.1);
-  opacity: 0;
+  opacity: .5;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 0.15s infinite;
+  animation: flicker 0.3s infinite;
 }
 .crt::before {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
+  z-index: 100;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-.crt {
-} */
