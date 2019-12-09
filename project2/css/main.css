@@ -63,13 +63,13 @@ p {
   background-color: #000;
   height: 100vh;
   background-position: center;
+  text-align: center;
 }
 
 .landing-letters {
-  display: flex;
+
+  display: inline-block;
   padding-top: 10vh;
-  margin: 0 auto;
-  width: 90%;
   animation: floating 2s infinite;
 }
 
@@ -96,10 +96,9 @@ p {
 }
 
 .sublanding-letters {
+
   padding-top: 15vh;
-  display: flex;
-  margin: 0 auto;
-  width: 85%;
+  display: inline-block;
   animation: blink 2s infinite;
 }
 
@@ -118,10 +117,9 @@ p {
 }
 
 .level-1 {
+  text-align: center;
   background-color: #0C025E;
   width: 100vw;
-  /* background-position: center;
-  border-bottom: 500px solid transparent; */
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -551,30 +549,91 @@ p {
   background-color: black;
   height: 100vh;
   background-position: center;
+  text-align: center;
 }
 
 .stop-letters{
-  display: flex;
-  padding-top: 25vh;
-  margin: 0 auto;
-  width: 77%;
+  display: inline-block;
+  padding-top: 27vh;
   animation: blink 1.4s infinite;
 }
 
 .level-1-puzzle{
   background-color: #5F15ED;
-  height: 100vh;
+  width: 100vw;
+  text-align: center;
 }
-
 
 .level-1-puzzle-text{
-  display: flex;
+  display: inline-block;
   padding-top: 10vh;
-  margin: 0 auto;
-  width: 100%;
+  width:100%;
+  padding-bottom:5vh;
 }
 
-@keyframes flicker {
+.b-puzzle-1{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.b-puzzle-2{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.b-puzzle-3{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.b-puzzle-4{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.b-puzzle-5{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.top-1{
+  left:25%;
+}
+
+.bottom-1{
+  right:25%;
+}
+
+
+.top{
+  left:25%;
+}
+
+.bottom{
+  right:25%;
+}
+
+/* .top-1:hover {
+  transform: translateX(-50px);
+}
+.bottom-1:hover {
+  transform: translateX(50px);
+} */
+
+
+.b-puzzle-1:hover ~ .top-1{
+-webkit-transform:translatex(-50px);
+transform:translatex(-50px);
+}
+
+.b-puzzle-1:hover ~ .bottom-1{
+-webkit-transform:translatex(50px);
+transform:translatex(50px);
+}
+
+
+
+/* @keyframes flicker {
   0% {
     opacity: 0.27861;
   }
@@ -667,4 +726,4 @@ p {
   pointer-events: none;
 }
 .crt {
-}
+} */
