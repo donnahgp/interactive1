@@ -127,6 +127,7 @@ p {
 }
 
 .level-1-row-1 {
+  text-align: center;
   margin: 10vh auto;
   margin-bottom: 3%;
   width: 82%;
@@ -168,6 +169,7 @@ p {
   margin-bottom: 1%;
   width: 98%;
   box-sizing: border-box;
+  transform:scale(.95);
 }
 
 .letter-4-red {
@@ -276,6 +278,24 @@ p {
   float: left;
   grid-template-columns: 3vw 3vw 3vw;
   grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-5-pets {
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 2vw 2vw 2vw 2vw 2vw;
+  grid-template-rows: 2vw 2vw 2vw 2vw 2vw;
+}
+
+.letter-4-pets {
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 2vw 2vw 2vw 2vw;
+  grid-template-rows: 2vw 2vw 2vw 2vw 2vw;
 }
 
 .letter-5-small {
@@ -545,6 +565,22 @@ p {
   background: transparent;
 }
 
+.letter-4-pets div {
+  background: #5EE57E;
+}
+
+.letter-4-pets div.empty {
+  background: transparent;
+}
+
+.letter-5-pets div {
+  background: #5EE57E;
+}
+
+.letter-5-pets div.empty {
+  background: transparent;
+}
+
 .level-1-stop {
   background-color: black;
   height: 100vh;
@@ -628,7 +664,6 @@ p {
   right:25%;
 }
 
-
 .b-puzzle-1:hover .top-1 {
     transform: translateX(-10vw);
     transition-duration: 1s;
@@ -637,6 +672,7 @@ p {
 .b-puzzle-1:hover .bottom-1 {
     transform: translateX(10vw);
     transition-duration: 1s;
+
 }
 
 .b-puzzle-2:hover .top-2 {
@@ -659,6 +695,11 @@ p {
     transition-duration: 1s;
 }
 
+.b-puzzle-4:hover {
+  animation: blink .3s infinite alternate;
+    transition-duration: 1s;
+}
+
 .b-puzzle-5:hover .top-5 {
     transform: translateX(-10vw);
     transition-duration: 1s;
@@ -668,6 +709,54 @@ p {
     transform: translateX(10vw);
     transition-duration: 1s;
 }
+
+
+.pets{
+  text-align: center;
+}
+
+
+.pets-letters{
+  margin: 10vh auto;
+  display: inline-block;
+}
+
+.owl{
+  display:inline-block;
+  padding-bottom: 3vh;
+}
+
+.dog{
+  display:inline-block;
+  padding-bottom: 3vh;
+}
+.pet-top-1{
+    left:25%;
+}
+
+.pet-bottom-1{
+    right:25%;
+}
+
+.pet-top-2{
+    left:25%;
+}
+
+.pet-bottom-2{
+    right:25%;
+    bottom:3.6vmin;
+    bottom:3.6%;
+    bottom:
+}
+
+.owl:hover .pet-top-1 {
+    transform: translateX(-7vw);
+    transition-duration: 1s;
+}
+
+.owl:hover .pet-bottom-1 {
+    transform: translateX(7vw);
+    transition-duration: 1s;
 
 
 /* @keyframes flicker {
