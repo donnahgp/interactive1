@@ -129,7 +129,6 @@ p {
 .level-1-row-1 {
   text-align: center;
   margin: 10vh auto;
-  margin-bottom: 3%;
   width: 82%;
 }
 
@@ -277,6 +276,69 @@ p {
   display: grid;
   float: left;
   grid-template-columns: 3vw 3vw 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-3-green {
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw 3vw 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-4-green {
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw 3vw 3vw 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-4-yellow {
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw 3vw 3vw 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-1-orange{
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-2-orange{
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-3-orange{
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw 3vw 3vw;
+  grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
+}
+
+.letter-5-super-red{
+  position: relative;
+  margin: 2vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 3vw 3vw 3vw 3vw 3vw;
   grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
 }
 
@@ -565,6 +627,70 @@ p {
   background: transparent;
 }
 
+.letter-3-green div {
+    background: #40FF71;
+}
+
+.letter-3-green div.empty {
+    background: transparent;
+}
+
+.letter-4-green div {
+    background: #40FF71;
+}
+
+.letter-4-green div.empty {
+    background: transparent;
+}
+
+.letter-5-green div {
+    background: #40FF71;
+}
+
+.letter-5-green div.empty {
+    background: transparent;
+}
+
+.letter-4-yellow div{
+    background: #FFF543;
+}
+
+.letter-4-yellow div.empty{
+    background: transparent;
+}
+
+.letter-1-orange div{
+    background: #FF9640;
+}
+
+.letter-1-orange div.empty{
+    background: transparent;
+}
+
+.letter-2-orange div{
+    background: #FF9640;
+}
+
+.letter-2-orange div.empty{
+    background: transparent;
+}
+
+.letter-3-orange div{
+    background: #FF9640;
+}
+
+.letter-3-orange div.empty{
+    background: transparent;
+}
+
+.letter-5-super-red div{
+  background: #FF4040;
+}
+
+.letter-5-super-red div.empty{
+  background: transparent;
+}
+
 .letter-4-pets div {
   background: #5EE57E;
 }
@@ -598,6 +724,7 @@ p {
   background-color: #5F15ED;
   width: 100vw;
   text-align: center;
+  padding-bottom:10vh;
 }
 
 .level-1-puzzle-text{
@@ -665,34 +792,57 @@ p {
 }
 
 .b-puzzle-1:hover .top-1 {
-    transform: translateX(-10vw);
-    transition-duration: 1s;
+    transform: translateX(-15vw);
+}
+
+.b-puzzle-1 .top-1 {
+  transition: transform 1s;
 }
 
 .b-puzzle-1:hover .bottom-1 {
-    transform: translateX(10vw);
+    transform: translateX(15vw);
     transition-duration: 1s;
 
+}
+
+.b-puzzle-1 .bottom-1 {
+  transition: transform 1s;
 }
 
 .b-puzzle-2:hover .top-2 {
-    transform: translateX(-10vw);
+    transform: translateX(-15vw);
     transition-duration: 1s;
+}
+
+.b-puzzle-2 .top-2 {
+  transition: transform 1s;
 }
 
 .b-puzzle-2:hover .bottom-2 {
-    transform: translateX(10vw);
+    transform: translateX(15vw);
     transition-duration: 1s;
+}
+
+.b-puzzle-2 .bottom-2 {
+  transition: transform 1s;
 }
 
 .b-puzzle-3:hover .top-3 {
-    transform: translateX(-10vw);
+    transform: translateX(-15vw);
     transition-duration: 1s;
 }
 
+.b-puzzle-3 .top-3 {
+  transition: transform 1s;
+}
+
 .b-puzzle-3:hover .bottom-3 {
-    transform: translateX(10vw);
+    transform: translateX(15vw);
     transition-duration: 1s;
+}
+
+.b-puzzle-3 .bottom-3 {
+  transition: transform 1s;
 }
 
 .b-puzzle-4:hover {
@@ -701,18 +851,26 @@ p {
 }
 
 .b-puzzle-5:hover .top-5 {
-    transform: translateX(-10vw);
+    transform: translateX(-15vw);
     transition-duration: 1s;
+}
+
+.b-puzzle-5 .top-5 {
+  transition: transform 1s;
 }
 
 .b-puzzle-5:hover .bottom-5 {
-    transform: translateX(10vw);
+    transform: translateX(15vw);
     transition-duration: 1s;
 }
 
+.b-puzzle-5 .bottom-5 {
+  transition: transform 1s;
+}
 
 .pets{
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 
@@ -728,25 +886,54 @@ p {
 
 .dog{
   display:inline-block;
+  padding-bottom: 4vh;
+}
+
+.fox{
+  display:inline-block;
   padding-bottom: 3vh;
 }
+
+
+.ghost{
+  padding-top: 100px;
+  display:inline-block;
+  padding-bottom: 3vh;
+}
+
 .pet-top-1{
-    left:25%;
+  left:25%;
 }
 
 .pet-bottom-1{
-    right:25%;
+  right:25%;
 }
 
 .pet-top-2{
-    left:25%;
+  left:25%;
+  top:2vw;
 }
 
 .pet-bottom-2{
+  right:25%;
+}
+
+.pet-top-3{
+  left:25%;
+  top:-2vw;
+}
+
+.pet-bottom-3{
     right:25%;
-    bottom:3.6vmin;
-    bottom:3.6%;
-    bottom:
+}
+
+.pet-top-4{
+  left:25%;
+}
+
+.pet-bottom-4{
+    right:25%;
+    top:-2vw;
 }
 
 .owl:hover .pet-top-1 {
@@ -754,10 +941,75 @@ p {
     transition-duration: 1s;
 }
 
+.owl .pet-top-1 {
+  transition: transform 1s;
+}
+
 .owl:hover .pet-bottom-1 {
     transform: translateX(7vw);
     transition-duration: 1s;
 
+}
+
+.owl .pet-bottom-1 {
+  transition: transform 1s;
+}
+
+.dog:hover .pet-top-2 {
+    transform: translateX(-7vw);
+    transition-duration: 1s;
+}
+
+.dog .pet-top-2{
+  transition: transform 1s;
+}
+
+.dog:hover .pet-bottom-2 {
+    transform: translateX(7vw);
+    transition-duration: 1s;
+
+}
+
+.dog .pet-bottom-2{
+  transition: transform 1s;
+}
+
+.ghost:hover .pet-top-3 {
+    transform: translateX(-7vw);
+    transition-duration: 1s;
+}
+
+.ghost .pet-top-3{
+    transition: transform 1s;
+}
+
+.ghost:hover .pet-bottom-3 {
+    transform: translateX(7vw);
+    transition-duration: 1s;
+
+}
+
+.ghost .pet-bottom-3{
+    transition: transform 1s;
+}
+
+.fox:hover .pet-top-4 {
+    transform: translateX(-7vw);
+    transition-duration: 1s;
+}
+
+.fox .pet-top-4{
+    transition: transform 1s;
+}
+
+.fox:hover .pet-bottom-4 {
+    transform: translateX(7vw);
+    transition-duration: 1s;
+
+}
+
+.fox .pet-bottom-4{
+    transition: transform 1s;
 }
 
 .paused {
@@ -781,8 +1033,13 @@ p {
 
 
 .level-2{
-  width:100vw;
   text-align: center;
+  background-color: #0C025E;
+  width: 100vw;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 15%;
 }
 
 .level-2-letters-header{
@@ -792,6 +1049,138 @@ p {
   box-sizing: border-box;
   transform:scale(.95);
 }
+
+.level-2-row-1{
+  text-align: center;
+  margin: 10vh auto;
+  width: 80%;
+}
+
+.level-2-row-2{
+  text-align: center;
+  margin: 10vh auto;
+  width: 82%;
+}
+
+.level-2-row-3{
+  text-align: center;
+  margin: 10vh auto;
+  width: 38%;
+}
+
+.level-2-row-4{
+  text-align: center;
+  margin: 10vh auto;
+  width: 39%;
+}
+
+.level-2-puzzle{
+  background-color: #5F15ED;
+  width: 100vw;
+  text-align: center;
+  padding-bottom:10vh;
+}
+
+.level-2-puzzle-text{
+  display: inline-block;
+  padding-top: 10vh;
+  width:100%;
+  padding-bottom:5vh;
+}
+
+.eight-puzzle-1{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.eight-puzzle-2{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.eight-puzzle-3{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.eight-puzzle-4{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.eight-puzzle-5{
+    display:inline-block;
+    padding-bottom: 3vh;
+}
+
+.eight-puzzle-1:hover .top-1 {
+    transform: translateX(-15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-1 .bottom-1 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-2:hover .top-2 {
+    transform: translateX(-15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-2 .top-2 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-2:hover .bottom-2 {
+    transform: translateX(15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-2 .bottom-2 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-3:hover .top-3 {
+    transform: translateX(-15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-3 .top-3 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-3:hover .bottom-3 {
+    transform: translateX(15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-3 .bottom-3 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-3:hover {
+  animation: blink .3s infinite alternate;
+    transition-duration: 1s;
+}
+
+.eight-puzzle-5:hover .top-5 {
+    transform: translateX(-15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-5 .top-5 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-5:hover .bottom-5 {
+    transform: translateX(15vw);
+    transition-duration: 1s;
+}
+
+.eight-puzzle-5 .bottom-5 {
+  transition: transform 1s;
+}
+
 
 @keyframes flicker {
   0% {
