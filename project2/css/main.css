@@ -846,7 +846,7 @@ p {
 }
 
 .b-puzzle-4:hover {
-  animation: blink .3s infinite alternate;
+  animation: blink .15s infinite alternate;
     transition-duration: 1s;
 }
 
@@ -1118,6 +1118,15 @@ p {
     transition-duration: 1s;
 }
 
+.eight-puzzle-1 .top-1 {
+  transition: transform 1s;
+}
+
+.eight-puzzle-1:hover .bottom-1 {
+    transform: translateX(15vw);
+    transition-duration: 1s;
+}
+
 .eight-puzzle-1 .bottom-1 {
   transition: transform 1s;
 }
@@ -1140,16 +1149,16 @@ p {
   transition: transform 1s;
 }
 
-.eight-puzzle-3:hover .top-3 {
+.eight-puzzle-4:hover .top-3 {
     transform: translateX(-15vw);
     transition-duration: 1s;
 }
 
-.eight-puzzle-3 .top-3 {
+.eight-puzzle-4 .top-3 {
   transition: transform 1s;
 }
 
-.eight-puzzle-3:hover .bottom-3 {
+.eight-puzzle-4:hover .bottom-3 {
     transform: translateX(15vw);
     transition-duration: 1s;
 }
@@ -1159,7 +1168,7 @@ p {
 }
 
 .eight-puzzle-3:hover {
-  animation: blink .3s infinite alternate;
+  animation: blink .15s infinite alternate;
     transition-duration: 1s;
 }
 
