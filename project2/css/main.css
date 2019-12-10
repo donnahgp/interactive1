@@ -67,7 +67,6 @@ p {
 }
 
 .landing-letters {
-
   display: inline-block;
   padding-top: 10vh;
   animation: floating 2s infinite;
@@ -1039,7 +1038,7 @@ p {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 15%;
+  padding-bottom: 5vh;
 }
 
 .level-2-letters-header{
@@ -1190,6 +1189,71 @@ p {
   transition: transform 1s;
 }
 
+.inventory {
+  background-color: #1B2FED;
+  height:100vh;
+  text-align: center;
+  padding-bottom:10vh;
+}
+
+.inventory-letters {
+  display: inline-block;
+  padding-top: 10vh;
+  padding-bottom:10vh;
+  transform:scale(1.7);
+}
+
+.coin-class{
+  padding:5vh;
+  display:inline-block;
+  margin-left:3.5%;
+}
+
+.coins{
+  display:inline-block;
+  padding-bottom: 3vh;
+}
+.coin-top{
+    left:25%;
+  }
+.coin-bottom{
+    right:25%;
+}
+
+.coins:hover .coin-top {
+    transform: translateX(-5vw);
+}
+
+.coins .coin-top {
+  transition: transform 1s;
+}
+
+.coins:hover .coin-bottom {
+    transform: translateX(5vw);
+    transition-duration: 1s;
+
+}
+
+.coins .coin-bottom {
+  transition: transform 1s;
+}
+
+.text-inv{
+  padding-bottom:-100px;
+}
+
+.score{
+  background-color: black;
+  height: 100vh;
+  background-position: center;
+  text-align: center;
+}
+
+.score-letters{
+  display:inline-block;
+  padding-top: 15vh;
+  animation: floating 2s infinite;
+}
 
 @keyframes flicker {
   0% {
