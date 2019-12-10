@@ -870,6 +870,7 @@ p {
 .pets{
   text-align: center;
   padding-bottom: 10vh;
+  background-color: #1B2FED;
 }
 
 
@@ -1253,6 +1254,12 @@ p {
   display:inline-block;
   padding-top: 15vh;
   animation: floating 2s infinite;
+}
+
+.full-score{
+  padding-top: 15vh;
+  display: inline-block;
+  animation: blink .75s infinite;
 }
 
 @keyframes flicker {
