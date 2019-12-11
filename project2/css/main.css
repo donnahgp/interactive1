@@ -883,9 +883,10 @@ p {
 }
 
 .sidequest-letters{
-  margin: 10vh auto;
+  margin: 9.9vh auto;
   display: inline-block;
 }
+
 
 .pets-letters{
   padding:2vh;
