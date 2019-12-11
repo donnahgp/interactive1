@@ -449,6 +449,15 @@ p {
   grid-template-rows: 3vw 3vw 3vw 3vw 3vw;
 }
 
+.letter-1-space {
+  position: relative;
+  margin: 0vw;
+  display: grid;
+  float: left;
+  grid-template-columns: 2vw;
+  grid-template-rows: 2vw 2vw 2vw 2vw 2vw;
+}
+
 /* letter pieces */
 .letter-5 div {
   background: #FFD522;
@@ -873,9 +882,13 @@ p {
   background-color: #1B2FED;
 }
 
+.sidequest-letters{
+  margin: 10vh auto;
+  display: inline-block;
+}
 
 .pets-letters{
-  margin: 10vh auto;
+  padding:2vh;
   display: inline-block;
 }
 
@@ -1245,7 +1258,7 @@ p {
 
 .score{
   background-color: black;
-  height: 100vh;
+  width: 100vw;
   background-position: center;
   text-align: center;
 }
@@ -1261,6 +1274,14 @@ p {
   display: inline-block;
   animation: blink .75s infinite;
 }
+
+.win-letters{
+  display:inline-block;
+  padding-top: 90vh;
+  padding-bottom:45vh;
+  animation: floating 2s infinite;
+}
+
 
 @keyframes flicker {
   0% {
